@@ -1,6 +1,6 @@
 FROM jetbrains/teamcity-agent
 
-RUN sh -c  wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb && \
+RUN sh wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb && \
 	sudo dpkg -i packages-microsoft-prod.deb && \
     sudo add-apt-repository universe && \
 	sudo apt-get install apt-transport-https -y && \
