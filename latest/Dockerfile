@@ -5,7 +5,7 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 	apt-get update && \
 	apt-get install mono-devel -y
 	
-RUN apt-get install nettools -y && \
+RUN apt-get install net-tools -y && \
 	apt-get install iputils-ping -y
 
 RUN curl -s -O https://packages.microsoft.com/config/ubuntu/18.04/packages-microsoft-prod.deb && \
